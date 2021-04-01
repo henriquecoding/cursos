@@ -44,23 +44,22 @@ body {
 }
 
 .conteudoPrincipal {
-
+    
 }
 
 .topico {
     color: var(--texto);
     font-size: 2rem;
     font-weight: 700;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 10px 7px;
     padding: 10px;
 }
-
-/*Carrossel*/
 
 .owl-carousel img {
     width: 300px;
 }
 
+/*
 .topico .carrossel .item{
     background: #4b4b4b;
     border-radius: 6px;
@@ -82,22 +81,46 @@ body {
 .topico .carrossel .item:hover .caixaItem {
     transform: scale(1.05);
 }
+*/
 
+/*Vitrine dos Cursos*/
 
-#btn_anterior, #btn_proximo {
-    display: none;
+.topicoCursos {
+    color: var(--texto);
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-@media screen and (min-width:768px) {
-    #btn_anterior, #btn_proximo {
-        display: block;
-        position: absolute;
-        top: 380px;
-    }
-    #btn_anterior {
-        left: 35px;
-    }
-    #btn_proximo {
-        right: 35px;
-    }
+.containerCursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curso {
+    background-color: var(--fundoEscuro);
+    border-radius: 5px;
+    display: flex;
+    margin: 5px auto;
+    width: 350px;
+    height: 100px;
+}
+
+.vitrineCurso {
+    width: 100px;
+}
+
+.nomeCurso {
+    color: var(--texto);
+    font-size: 19px;
+    padding: 7px 7px 0px 7px;
+}
+
+.descricaoCurso {
+    color: var(--branco);
+    font-size: 14px;
+    padding: 0px 10px 0px 7px;
+}
+
+@media screen and (min-width:1025px) {
+    
 }
